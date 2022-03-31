@@ -1,3 +1,5 @@
+// prompt asking 
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -11,4 +13,7 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+
+generateBtn.addEventListener("click", function(){prompt("How many characters do you want your password to be? min - 8, max - 128");});
+
+// generateBtn.addEventListener("click", writePassword);
