@@ -14,6 +14,7 @@ function writePassword() {
   var lowerCaseLetters = "abcdefghijklmnopqrstuvwxyz";
   var numbers = 1234567890;
   var specialCharacters = " !'($)*+,-.&#/:%;<=>?@[\]^_`{|}~";
+  var passwordCharacters = [];
   if (lengthPromptAnswer >= 8 && lengthPromptAnswer <= 128) {
     console.log(lengthPromptAnswer);
   } else {
@@ -25,20 +26,22 @@ function writePassword() {
   }
 
   if (upperCaseAnswer === true) {
-    console.log(upperCaseLetters)
+    passwordCharacters.push("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
   }
 
   if (lowerCaseAnswer === true) {
-    console.log(lowerCaseLetters)
+    passwordCharacters.push("abcdefghijklmnopqrstuvwxyz")
   }
 
   if (numbersAnswer === true) {
-    console.log(numbers)
+    passwordCharacters.push("1234567890")
   }
 
   if (specialCharactersAnswer === true) {
-    console.log(specialCharacters)
+    passwordCharacters.push(" !'($)*+,-.&#/:%;<=>?@[\]^_`{|}~")
   }
+
+  
 
   passwordText.value = password;
 
@@ -48,4 +51,5 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword(){
-};
+  //return passwordCharacters[Math.floor(Math.random() * lengthPromptAnswer.length)]
+}
