@@ -5,11 +5,15 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  var lengthPromptAnswer = prompt ("How many characters would you like? min - 8, max - 128")
-  var upperCaseAnswer = confirm ("Do you want uppercase letters?")
-  var lowerCaseAnswer = confirm ("Do you want lowercase letters?")
-  var numbersAnswer = confirm ("Do you want numbers?")
-  var specialCharactersAnswer = confirm ("Do you want special characters?")
+  var lengthPromptAnswer = prompt ("How many characters would you like? min - 8, max - 128");
+  var upperCaseAnswer = confirm ("Do you want uppercase letters?");
+  var lowerCaseAnswer = confirm ("Do you want lowercase letters?");
+  var numbersAnswer = confirm ("Do you want numbers?");
+  var specialCharactersAnswer = confirm ("Do you want special characters?");
+  var upperCaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var lowerCaseLetters = "abcdefghijklmnopqrstuvwxyz";
+  var numbers = 1234567890;
+  var specialCharacters = " !'($)*+,-.&#/:%;<=>?@[\]^_`{|}~";
   if (lengthPromptAnswer >= 8 && lengthPromptAnswer <= 128) {
     console.log(lengthPromptAnswer);
   } else {
@@ -21,19 +25,19 @@ function writePassword() {
   }
 
   if (upperCaseAnswer === true) {
-    console.log(upperCaseAnswer)
+    console.log(upperCaseLetters)
   }
 
   if (lowerCaseAnswer === true) {
-    console.log(lowerCaseAnswer)
+    console.log(lowerCaseLetters)
   }
 
   if (numbersAnswer === true) {
-    console.log(numbersAnswer)
+    console.log(numbers)
   }
 
   if (specialCharactersAnswer === true) {
-    console.log(specialCharactersAnswer)
+    console.log(specialCharacters)
   }
 
   passwordText.value = password;//this will write to page
@@ -58,20 +62,3 @@ function generatePassword(){
       //a password is generated that matches the selected criteria
         //How?
 };
-
-function issuePrompts(){
-  characterLengthPrompt();
-   //asked for character type???
-}
-
-function characterLengthPrompt(){
-  //at least 8 characters and no more than 128 characters???
-}
-function confirmLowercase(){
-  // confirm whether or not to include lowercase, ???
-}
-
-
-function valideateUserChoice(){
-  //make sure that at least one character type should be selected
-}
