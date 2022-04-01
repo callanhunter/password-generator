@@ -1,5 +1,3 @@
-// prompt asking 
-
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -7,46 +5,73 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+  var lengthPromptAnswer = prompt ("How many characters would you like? min - 8, max - 128")
+  var upperCaseAnswer = confirm ("Do you want uppercase letters?")
+  var lowerCaseAnswer = confirm ("Do you want lowercase letters?")
+  var numbersAnswer = confirm ("Do you want numbers?")
+  var specialCharactersAnswer = confirm ("Do you want special characters?")
+  if (lengthPromptAnswer >= 8 && lengthPromptAnswer <= 128) {
+    console.log(lengthPromptAnswer);
+  } else {
+    prompt ("Please select within the range. 8 - 128")
+  }
 
-  passwordText.value = password;
+  if (lengthPromptAnswer === true) {
+    console.log(lengthPromptAnswer)
+  }
+
+  if (upperCaseAnswer === true) {
+    console.log(upperCaseAnswer)
+  }
+
+  if (lowerCaseAnswer === true) {
+    console.log(lowerCaseAnswer)
+  }
+
+  if (numbersAnswer === true) {
+    console.log(numbersAnswer)
+  }
+
+  if (specialCharactersAnswer === true) {
+    console.log(specialCharactersAnswer)
+  }
+
+  passwordText.value = password;//this will write to page
 
 }
 
 // Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
-generateBtn.addEventListener("click", passwordQuestions);
+function generatePassword(){
+  // THEN I am presented with a series of prompts for password criteria
+    //issue prompts to user
+      //prompted for the length
+        //at least 8 characters and no more than 128 characters
+      //asked for character type
+        // confirm whether or not to include lowercase, 
+        // uppercase, 
+        // numeric, 
+        // and/or special characters
+      //Input should be validated 
+        //at least one character type should be selected
+      //a password is generated that matches the selected criteria
+        //How?
+};
 
-function passwordQuestions() {
-  var passwordLength = prompt ("How many characters do you want your password to be? min - 8, max - 128");
-  if (passwordLength >= 8 && passwordLength <= 128) {
-    return passwordLength;
-  } else {
-    return prompt("Please enter within the range of 8 - 128.");
-  }
+function issuePrompts(){
+  characterLengthPrompt();
+   //asked for character type???
 }
 
-function passwordQuestions() {
-  var passwordLength = prompt ("How many characters do you want your password to be? min - 8, max - 128");
-  if (passwordLength >= 8 && passwordLength <= 128) {
-    return passwordLength;
-  } else {
-    return prompt("Please enter within the range of 8 - 128.");
-  }
+function characterLengthPrompt(){
+  //at least 8 characters and no more than 128 characters???
+}
+function confirmLowercase(){
+  // confirm whether or not to include lowercase, ???
 }
 
-// var promptQuestion {
-//   lowerCaseLetters = "abcdefghijklmnopqrstuvwxyz",
-//   upperCaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-//   specialCharacters = " !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
-// }
 
-
-
-// if (passwordLength >= 8 && passwordLength <= 128) {
-//   return passwordLength;
-// } else {
-//   return prompt("Please enter within the range of 8 - 128.");
-// }
-
-
-// generateBtn.addEventListener("click", writePassword);
+function valideateUserChoice(){
+  //make sure that at least one character type should be selected
+}
