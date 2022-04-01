@@ -40,7 +40,7 @@ function writePassword() {
     console.log(specialCharacters)
   }
 
-  passwordText.value = password;//this will write to page
+  passwordText.value = password;
 
 }
 
@@ -48,17 +48,4 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword(){
-  // THEN I am presented with a series of prompts for password criteria
-    //issue prompts to user
-      //prompted for the length
-        //at least 8 characters and no more than 128 characters
-      //asked for character type
-        // confirm whether or not to include lowercase, 
-        // uppercase, 
-        // numeric, 
-        // and/or special characters
-      //Input should be validated 
-        //at least one character type should be selected
-      //a password is generated that matches the selected criteria
-        //How?
 };
