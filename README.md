@@ -1,23 +1,41 @@
 # password-generator
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 # Description
 
-### If you're ever in need of a new password and cant come up with anything on the top of your head, this password generator is the place to be. This project give you the option to choose between uppercase letters, lowercase letters, numbers, and special characters. You can choose one of those option or all four options, your choice! You also have the option to choose the length which is minimum 8 characters and maximum 128 characters.
+### In this project, a user will be asked a series of questions asking what characters they want in their password. Once they complete all questions, a random password will be generated for them.
 
-# Features
+# Table of contents
 
-### Simply just click on the Generate Password button, then you will be asked a series of questions on which type of characters you'd prefer. After that, you randomly generated password will appear in the box right below. You have the option to repeat this same process as many times as you desire to get the perfect password with random characters.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Languages Used](#languages-used)
+- [Credits](#credits)
+- [Questions](#questions)
+
+# Installation
+
+### No installation is required
 
 # Usage
 
-### ![Screenshot of JavaScript](images/screenshot.png)
-
-### In the screenshot above shows the you will be asked a series of question and then when you answer yes, certain characters will be pushed into the array to randomize your password.
+### Link to video walkthrough: https://drive.google.com/file/d/1pPTx-mSxx-_r4RUZvs35oqmNbhyw4pIX/view
 
 # Languages Used
 
-### HTML, CSS, and JavaScript were used in this project.
+- HTML
+- CSS
+- JavaScript
 
-# Link
+# Credits
 
-### https://callanhunter.github.io/password-generator/
+### Callan Hunter
+
+### LinkedIn: https://www.linkedin.com/in/callan-hunter-195816196/
+
+### GitHub: https://github.com/callanhunter
+
+# Questions
+
+### You can reach me at @callan57hunter@gmail.com
